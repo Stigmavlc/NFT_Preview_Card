@@ -1,0 +1,234 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body {
+  /*Really important! We need to set the html and body elements with a height of
+	100% so that even if the content doesn't fill the entire page the elements do*/
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background-color: #0d192b;
+  background-color: hsl(217, 54%, 11%);
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1rem;
+  justify-content: center;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+p {
+  color: #8cacda;
+  color: hsl(215, 51%, 70%);
+}
+
+hr {
+  border: 0.6px solid #8cacda;
+  margin: 0 auto;
+  margin-bottom: var(--margin-bottom);
+  width: 100%;
+}
+
+img {
+  display: block;
+}
+
+:root {
+  --margin-bottom: 1.7em;
+  --margin-top: 2em;
+}
+
+.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+.main-card {
+  align-items: center;
+  background-color: #14253d;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: var(--margin-top) auto;
+  /*justify-content: center;*/
+  max-width: 80%;
+}
+
+.nft-image img {
+  /*This allows us to resize the image (since an image is am inline element we cannot
+	modify its size)*/
+  border-radius: 10px;
+  /*This centers the image*/
+  margin: auto;
+  margin-bottom: var(--margin-bottom);
+  max-width: 100%;
+}
+
+.text {
+  align-items: flex-start;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-bottom: var(--margin-bottom);
+  text-align: left;
+}
+
+.text p {
+  font-weight: 100;
+}
+
+.nft-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 5%;
+  position: relative;
+}
+
+.text p {
+  line-height: 1.5;
+}
+
+.price-time {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: var(--margin-bottom);
+  width: 100%;
+}
+
+.price {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.price p {
+  color: #00fff7;
+  color: hsl(178, 100%, 50%);
+  margin-left: 6px;
+}
+
+.time {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.time p {
+  margin-left: 6px;
+}
+
+.author {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+
+.author img {
+  border: 1.5px solid white;
+  border-radius: 50%;
+  max-width: 15%;
+}
+
+.username {
+  color: white;
+  font-weight: 400;
+}
+
+.author p {
+  margin-left: 5%;
+}
+
+@media only screen and (max-width: 375px) {
+
+  .main-card {
+    margin-bottom: 5%;
+    padding: 1.5em 1.3em;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .main-card {
+    min-height: 65%;
+    margin-bottom: 2%;
+    max-width: 28%;
+    padding: 1.5em 1.5em;
+  }
+
+  .author-content {
+    width: 100%;
+  }
+}
+
+.nft-image:hover{
+  cursor: pointer;
+}
+
+.username:hover{
+  color: #00fff7;
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}

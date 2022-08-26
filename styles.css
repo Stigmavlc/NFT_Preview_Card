@@ -145,7 +145,7 @@ img {
 	modify its size)*/
   border-radius: 10px;
   /*This centers the image*/
-  margin: auto;
+  /*margin: auto;*/
   max-width: 100%;
   z-index: 4;
 }
@@ -270,7 +270,7 @@ img {
   .main-card {
     min-height: 65%;
     margin-bottom: 2%;
-    max-width: 21%;
+    max-width: 25%;
     padding: 1.5em 1.5em;
   }
 

@@ -104,7 +104,7 @@ img {
   align-items: center;
   background-color: #14253d;
   background-color: hsl(216, 50%, 16%);
-  border-radius: 20px;
+  border-radius: 15px;
   display: flex;
   flex-flow: column nowrap;
   padding: var(--margin-top) auto;
@@ -132,7 +132,7 @@ img {
 .nft-image-background {
   background-color: rgb(0, 255, 247);
   background-color: hsl(178, 100%, 50%);
-  border-radius: 10px;
+  border-radius: 5px;
   height: 100%;
   opacity: 0;
   position: absolute;
@@ -143,7 +143,7 @@ img {
 .nft-image {
   /*This allows us to resize the image (since an image is am inline element we cannot
 	modify its size)*/
-  border-radius: 10px;
+  border-radius: 5px;
   /*This centers the image*/
   /*margin: auto;*/
   max-width: 100%;

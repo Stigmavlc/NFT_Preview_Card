@@ -213,6 +213,7 @@ img {
   align-items: center;
   display: flex;
   flex-flow: row nowrap;
+  font-weight: 600;
   justify-content: flex-start;
 }
 

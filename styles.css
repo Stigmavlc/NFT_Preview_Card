@@ -260,7 +260,7 @@ img {
 @media only screen and (max-width: 375px) {
 
   .main-card {
-    margin-bottom: 5%;
+    /*margin-bottom: 5%;*/
     padding: 1.5em 1.3em;
     width: 90%;
   }
@@ -269,7 +269,7 @@ img {
 @media only screen and (min-width: 1440px) {
   .main-card {
     min-height: 65%;
-    margin-bottom: 2%;
+    /*margin-bottom: 2%;*/
     max-width: 24%;
     padding: 1.5em 1.5em;
   }

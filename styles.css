@@ -177,7 +177,7 @@ img {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  margin-bottom: 1.8em;
+  margin-bottom: var(--margin-bottom);
   text-align: left;
 }
 

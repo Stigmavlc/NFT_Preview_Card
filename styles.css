@@ -182,7 +182,9 @@ img {
 }
 
 .text p {
+  font-size: 18px;
   font-weight: 300;
+  line-height: 1.5;
 }
 
 .nft-name {
@@ -196,10 +198,6 @@ img {
   color: #00fff7;
   color: hsl(178, 100%, 50%);
   cursor: pointer;
-}
-
-.text p {
-  line-height: 1.5;
 }
 
 .price-time {

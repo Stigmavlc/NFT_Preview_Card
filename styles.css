@@ -54,8 +54,6 @@ table {
 }
 
 html, body {
-  /*Really important! We need to set the html and body elements with a height of
-	100% so that even if the content doesn't fill the entire page the elements do*/
   height: 100%;
 }
 
@@ -89,17 +87,6 @@ img {
   display: block;
 }
 
-.attribution {
-  font-size: 0.7rem;
-  text-align: center;
-}
-
-.attribution a {
-  color: #3e52a3;
-  color: hsl(228, 45%, 44%);
-  text-decoration: none;
-}
-
 .main-card {
   align-items: center;
   background-color: #14253d;
@@ -109,7 +96,6 @@ img {
   flex-flow: column nowrap;
   padding: var(--margin-top) auto;
   position: relative;
-  /*justify-content: center;*/
   max-width: 80%;
 }
 
@@ -141,11 +127,7 @@ img {
 }
 
 .nft-image {
-  /*This allows us to resize the image (since an image is am inline element we cannot
-	modify its size)*/
   border-radius: 5px;
-  /*This centers the image*/
-  /*margin: auto;*/
   max-width: 100%;
   z-index: 4;
 }
@@ -161,16 +143,6 @@ img {
 .nft-image-container:hover .nft-image-background {
   opacity: 50%;
 }
-
-/*.nft-image img {
-  This allows us to resize the image (since an image is am inline element we cannot
-	modify its size)
-  border-radius: 10px;
-  This centers the image
-  margin: auto;
-  margin-bottom: var(--margin-bottom);
-  max-width: 100%;
-}*/
 
 .text {
   align-items: flex-start;
@@ -252,6 +224,12 @@ img {
   font-weight: 400;
 }
 
+.username:hover{
+  color: #00fff7;
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
 .author p {
   margin-left: 5%;
 }
@@ -259,7 +237,6 @@ img {
 @media only screen and (max-width: 375px) {
 
   .main-card {
-    /*margin-bottom: 5%;*/
     padding: 1.5em 1.3em;
     width: 90%;
   }
@@ -268,7 +245,6 @@ img {
 @media only screen and (min-width: 1440px) {
   .main-card {
     min-height: 65%;
-    /*margin-bottom: 2%;*/
     max-width: 24%;
     padding: 1.45em 1.45em;
   }
@@ -276,10 +252,4 @@ img {
   .author-content {
     width: 100%;
   }
-}
-
-.username:hover{
-  color: #00fff7;
-  color: hsl(178, 100%, 50%);
-  cursor: pointer;
 }

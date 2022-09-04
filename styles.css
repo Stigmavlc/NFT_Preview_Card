@@ -76,7 +76,6 @@ select {
 
 :root {
   --margin-bottom: 1.7em;
-  --margin-top: 2em;
   --card-max-width: 21.6rem;
   --card-padding: 1.45em 1.45em;
 }
@@ -116,9 +115,9 @@ img {
   border-radius: 15px;
   display: flex;
   flex-flow: column nowrap;
-  padding: var(--margin-top) auto;
+  max-width: var(--card-max-width);
+  padding: var(--card-padding);
   position: relative;
-  max-width: 80%;
 }
 
 .nft-image-container {
@@ -149,11 +148,7 @@ img {
 }
 
 .nft-image {
-  /*This allows us to resize the image (since an image is am inline element we cannot
-	modify its size)*/
   border-radius: 5px;
-  /*This centers the image*/
-  /*margin: auto;*/
   max-width: 100%;
   z-index: 4;
 }
@@ -261,17 +256,7 @@ img {
 }
 
 @media only screen and (max-width: 1439px) {
-
   .main-card {
-    max-width: var(--card-max-width);
-    padding: var(--card-padding);
     width: 90%;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .main-card {
-    max-width: var(--card-max-width);
-    padding: var(--card-padding);
   }
 }
